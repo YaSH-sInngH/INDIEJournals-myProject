@@ -1,0 +1,84 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+    script(src='/static/journal.js')
+
+
+block style 
+    style 
+      include ../static/style.css
+      include ../static/journalstyle.css
+
+block content 
+     main    
+        div.header 
+          p Latest on our Journals !!
+        div.box1
+          h1 "Chandrayaan 3": Achieves Perfect Lunar Landing!
+          div.box-container 
+            div.image 
+              img(src="/static/img/p5.jpg", alt="Chandryaan-3 Image")
+            div.content
+              p In a remarkable achievement, India's space agency ISRO has announced the triumphant landing of Chandrayaan-3 on the lunar surface. The spacecraft's successful touchdown marks a significant leap in the nation's space exploration prowess. Chandrayaan-3, built on the foundation of its predecessors, has demonstrated the culmination of precision engineering and tireless efforts by ISRO's dedicated team.
+              |
+              p The lander and rover duo navigated the complexities of the moon's surface with precision, touching down in a region of immense scientific interest. The accomplishment is being hailed not only for its technological brilliance but also for India's continuous commitment to unraveling the mysteries of the cosmos.
+          button.button2 
+              a(href='/newpage2') View More......
+        div.box2 
+          h1 "Vande Bharat": Leading Indian glory
+          div.box-container1 
+            div.image1 
+              img(src="/static/img/p9.jpg", alt="Vande Bharat Image")
+            div.content1
+              p New Delhi, September 2, 2023 - It has been a journey of innovation, progress, and national pride since the launch of India's Vande Bharat Express on February 15, 2019. As we mark over four years since its inaugural run, this high-speed train continues to lead India towards glory, setting new standards for efficiency and connectivity in the country's railway network.
+              |
+              p As we reflect on the remarkable journey of Vande Bharat Express from 2019 to the present day, one thing is clear: India's vision for a modern, efficient, and sustainable railway system is well on track. The train has set a precedent for future high-speed rail projects, and the government's plans for expanding the network and introducing even faster trains signal a bright future for rail travel in India.
+          button.button1 
+              a(href='/newpage1') View More......
+        div.box3 
+          h1 "India Hosts G20: Global Diplomacy in Spotlight"
+          div.box-container2 
+            div.image2 
+              img(src="/static/img/p8.jpg", alt="G20-Image")
+            div.content2
+              p The G20, comprised of major economies from across the world, is meeting in the vibrant capital city of New Delhi to deliberate on topics ranging from economic growth and trade to climate change and global health. This prestigious summit is an opportunity for India to showcase its diplomatic prowess and commitment to fostering collaboration on a global scale.
+              |
+              p As the host nation, India is keenly focused on ensuring productive dialogues that lead to practical solutions and agreements. The G20 Summit serves as a testament to India's growing influence on the world stage, reaffirming its commitment to addressing challenges that transcend borders and impact every corner of the planet.
+          button.button
+            a(href='/newpage') View More......
+
+        div.sidebar 
+          h1 Latest News
+          div.side-container1
+            div.side-image1 
+              img(src="/static/img/p10.jpg", alt="Image")
+            div.side-content1 
+              a(href="https://www.thehindu.com/opinion/editorial/the-hindu-editorial-on-chandryaan-3-soft-landing-on-the-moon-over-the-moon/article67227908.ece" , target="_blank")
+                p Aditya L1, India’s first solar mission, launched from ISRO’s Sriharikota spaceport in Andhra Pradesh
+          div.side-container1
+            div.side-image1 
+              img(src="/static/img/p11.jpg", alt="Image")
+            div.side-content1
+              a(href="https://zeenews.india.com/railways/treat-to-eyes-indian-railways-saffron-coloured-vande-bharat-express-train-hits-tracks-2650875.html#:~:text=Railway%20officials%20earlier%20announced%20that,blue%20livery%20are%20already%20manufactured." , target="_blank")
+                p Treat To Eyes: Indian Railways' Saffron-Coloured Vande Bharat Express Train Hits Tracks
+          div.side-container1
+            div.side-image1 
+              img(src="/static/img/p12.jpg", alt="Image")
+            div.side-content1 
+              a(href="https://www.thehindu.com/news/international/china-releases-new-official-map-showing-territorial-claims/article67245869.ece" , target="_blank")
+                p China's Latest Map Revision Sparks Diplomatic Storm with India, Escalating Tensions Between the Two Nations?
+          div.side-container1
+            div.side-image1 
+              img(src="/static/img/p13.jpg", alt="Image")
+            div.side-content1
+              a(href="https://energy.economictimes.indiatimes.com/news/renewable/hindenburg-2-0-occrp-alleges-mauritius-based-opaque-funds-invested-in-adani-stock-company-denies/103235398" , target="_blank") 
+                p Hindenburg 2.0: OCCRP alleges Mauritius-based opaque funds invested millions of dollars in Adani stock
+          div.side-container1
+            div.side-image1 
+              img(src="/static/img/p14.jpg", alt="Image")
+            div.side-content1 
+              a(href="https://www.livemint.com/sports/cricket-news/india-vs-pakistan-live-score-asia-cup-2023-updates-super-4-cricket-virat-kohli-rohit-sharma-babar-azam-shubman-gill-11694314811869.html" , target="_blank")
+                p High Stakes Showdown: India and Pakistan Clash in Thrilling Asia Cup Cricket Match
+        div.footer 
+          p More on our Journals...

@@ -1,0 +1,37 @@
+
+doctype html
+html
+  head
+    link(rel="icon", type="image/x-icon", href="/static/INDIEJournals.png")
+    title Case Page
+    //- meta(name="viewport", content="width=1300px, initial-scale=1.0")
+    style
+        include ../static/casestyle.css
+  body
+    
+    //Home button
+    nav.case-nav
+      ul
+        li
+          button.btn
+            a(href="/") Go to Home
+        li
+          h2 NEWS
+
+    div.in
+        h1 Write the news you want to search for...
+  
+
+    // Search bar form
+    form(id="news-search-form")
+      input(type="text", id="search-input", name="query", placeholder="Search for news...")
+      button(type="submit") Search
+
+    // News container
+    main
+      .news-container
+
+
+    script
+      include ../static/case.js
+

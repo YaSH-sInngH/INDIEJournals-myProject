@@ -1,0 +1,68 @@
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
+
+doctype html
+html
+  head
+    link(rel="icon", type="image/x-icon", href="/static/INDIEJournals.png")
+    title INDIEJournals
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul 
+        div#logo 
+            img(src="/static/INDIEJournals.png")
+        li #[a(href="/") Home]
+        li #[a(href="/about") About]
+        li #[a(href="/journals") Our Journals]
+        li #[a(href="/case") News]
+    section#homepage
+      h1 Indie Journals  
+      p Indie Journals invites you to embark on an extraordinary literary voyage that traverses the annals of time, unraveling the narratives of both historic and current events. Our pages are a gateway to the past, where the grand tapestry of history comes alive through meticulous research and insightful analysis. From the revolutions that reshaped societies to the renaissances that ignited cultural awakenings, Indie Journals captures the essence of pivotal moments that have defined humanity.
+      |
+      p However, we're not confined to the past. In a world inundated with headlines, we rise above the noise to provide you with a fresh perspective on present-day events. Our commitment to authenticity stands as an unwavering beacon, guiding you through the labyrinth of information. In an era where misinformation thrives, Indie Journals stands as an authentic and reliable source, dedicated to presenting unbiased truths.
+      |
+      p We are more than just a publication; we're a custodian of accuracy and a curator of knowledge. Our dedication to preserving the authenticity of historical events and dissecting contemporary occurrences ensures that you're equipped with genuine insights. Our journal is a convergence of history and modernity, a space where voices from the past echo through the ages, resonating with the issues that shape our world today.
+      |
+      p Amid the cacophony of mainstream media, Indie Journals is your sanctuary of independent thought. We embrace diverse viewpoints, empowering critical thinking and inspiring conversations that transcend time. Through our pages, you'll not only rediscover the past but also engage with the present in a profound and meaningful way. Join us in this intellectual journey that transcends epochs, as we celebrate the uniqueness of Indie Journals the authentic bridge between history, current events, and the uncharted territories of knowledge. 
+    section#introsection 
+      h1 Agenda
+      p "Truth is a bitter tonic, while lies masquerade as sweet illusions."
+      |
+      p Delve into history's intricacies, exploring the echoes of the past and their relevance today. Present an authentic and reliable source for unbiased insights and diverse perspectives. Foster critical thinking by bridging the gap between historical events and the modern world.
+    section#membersection
+        h1 Become a Member
+        div#form-container 
+          div#image
+            img(src="/static/INDIEJournals.png" alt="INDIEJournals Logo")
+          form(action="/", method="post", class="myform") 
+            input(type="text", class="myInput", name="name", placeholder="Enter your Name" required)
+            input(type="email", class="myInput", name="email", placeholder="Enter your E-mail" required)
+            input(type="phone", class="myInput", name="phone", placeholder="Enter your Mobile Number" required)
+            input(type="text", class="myInput", name="interest", placeholder="What's your interest e.g. History")
+            input(type="text", class="myInput", name="moral", placeholder="Write one moral")
+            button(class="btn", onclick="alert('Form has been Submitted \u{1F604} ')")
+              | Submit
+    footer#footer
+      section#footersection
+        div#firstfooter
+          span Get Started with us on Social Media :  
+        div#secondfooter 
+          a(href="")
+            i(class="fab fa-facebook-f")
+          a(href="")
+            i(class="fab fa-twitter")
+          a(href="")
+            i(class="fab fa-google")
+          a(href="")
+            i(class="fab fa-instagram")
+          a(href="")
+            i(class="fab fa-linkedin")
+          a(href="")
+            i(class="fab fa-github")
+      div#thirdfooter 
+          | "INDIEJournals will tell you the truth, No matter what !!!"
+      div#fourthfooter
+          | ©2023 Copyright:INDIEJournals.com
+    script
+      include ../static/index.js

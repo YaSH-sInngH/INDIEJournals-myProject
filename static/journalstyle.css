@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /* background: center/cover no-repeat url('/static/04.jpg'); */
+    background-color: #fdffd4;
+}
+main{
+    /* height: 1800px; */
+    background-color: white;
+    width: 75%;
+    margin: 50px auto;
+    border: 8px solid white;
+    color: white;
+    display: grid;
+    grid-template-rows: 60px 440px 460px 440px 60px;
+    grid-template-columns: repeat(3, 1fr) 300px;
+    grid-gap: 20px;
+}
+    /* Your existing CSS */
+
+.header {
+    background-color: #5b4c34;
+    grid-column: 1/-1;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    animation: colorChange 5s infinite; /* Apply the animation */
+}
+
+/* Define the animation */
+@keyframes colorChange {
+    0%, 100% {
+        background-position: 100% 100%;
+        color: #e00000;
+    }
+    25% {
+        background-position: 0 0;
+        color: #03e30f;
+    }
+    50% {
+        background-position: 100% 0;
+        color: #eeff00;
+    }
+    75% {
+        background-position: 0 100%;
+        color: rgb(0, 251, 255);
+    }
+}
+.box1 h1{
+    color: black;
+    margin: 25px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.box1{
+    background-color: #cbb78d;
+    grid-column: 1/4;
+}
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    height: 200px;
+    margin: 15px;
+}
+.content p{
+    color: black;
+    font-size: 1.1rem;
+    margin: 0px 20px;
+    padding: 5px;
+}
+.button{
+    border: none;
+    /* margin-left: 44%; */
+    cursor: pointer;
+    outline: 2px;
+    background-color: #2f3542;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    width: 30%;
+    padding: 3px;
+    margin: 10px 355px;
+}
+.button:hover{
+    font-size: 1.051rem;
+    background-color: #4f4d48;
+    color: white;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+.button1{
+    border: none;
+    /* margin-left: 44%; */
+    cursor: pointer;
+    outline: 2px;
+    background-color: #2f3542;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    width: 30%;
+    padding: 3px;
+    margin: 10px 355px;
+}
+.button1:hover{
+    font-size: 1.051rem;
+    background-color: #4f4d48;
+    color: white;
+}
+.button1 a{
+    text-decoration: none;
+    color: white;
+}
+.button2{
+    border: none;
+    /* margin-left: 44%; */
+    cursor: pointer;
+    outline: 2px;
+    background-color: #2f3542;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    width: 30%;
+    padding: 3px;
+    margin: 10px 355px;
+}
+.button2:hover{
+    font-size: 1.051rem;
+    background-color: #4f4d48;
+    color: white;
+}
+.button2 a{
+    text-decoration: none;
+    color: white;
+}
+    
+.box2{
+    background-color: #cbb78d;
+    grid-column: 1/4;
+}
+.box2 h1{
+    color: black;
+    margin: 25px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.box-container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image1 img{
+    height: 220px;
+    width: 300px;
+    margin: 15px;
+}
+.content1 p{
+    color: black;
+    font-size: 1.1rem;
+    margin: 0px 20px;
+    padding: 5px;
+}
+.box3{
+    background-color: #cbb78d;
+    grid-column: 1/4;
+}
+.box3 h1{
+    color: black;
+    margin: 25px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.box-container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image2 img{
+    height: 240px;
+    width: 300px;
+    margin: 15px;
+}
+.content2 p{
+    color: black;
+    font-size: 1.1rem;
+    margin: 0px 20px;
+    padding: 8px;
+}
+
+.sidebar{
+    background-color: #d3ddef;
+    grid-row: 2/5;
+    grid-column: 4/5;
+}
+.sidebar h1{
+    color: black;
+    text-align: center;
+    border-bottom: 4px solid black;
+    background-color: #d9e7ff;
+    margin: 13px;
+    box-shadow: 3px 5px 10px black;
+}
+.side-container1{
+    display: flex;
+    margin: 35px auto;
+    border-bottom: 2px solid black;
+}
+.side-image1{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+}
+.side-image1 img{
+    width: 120px;
+    height: 80px;
+}
+.side-content1{
+    display: flex;
+    align-items: center;
+    margin: 1px;
+}
+.side-content1 a{
+    text-decoration: none;
+}
+.side-content1 p{
+    color: black;
+    font-size: 1.02rem;
+    transition: text-decoration 0.7s;
+}
+.side-content1 p:hover{
+    cursor: pointer;
+    /* color: rgb(0, 17, 255); */
+    text-decoration: underline;
+}
+
+.footer{
+    background-color: #2f3542;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.footer:hover{
+cursor: pointer;
+background-color: #4f5363;
+font-size: 1.6rem;
+}
+
+/*                           MAKING THE WEBSITE RESPONSIVE                       */
+
+/* 
+USING MEDIA QUERRY
+FOR MOBILE PHONES 
+*/
+
+@media (max-width: 1300px){
+
+    main{
+        grid-template-rows: 110px 2000px 2000px 2000px 110px;
+        width: 90%;
+    }
+    .header{
+        font-size: 3.5rem;
+    }
+    .box1 h1{
+        color: black;
+        margin: 12px;
+        text-align: center;
+        border-bottom: 2px solid black;
+        font-size: 50px;
+    }
+    .box2 h1 {
+        color: black;
+        margin: 12px;
+        text-align: center;
+        border-bottom: 2px solid black;
+        font-size: 50px;
+    }
+    .box3 h1 {
+        color: black;
+        margin: 12px;
+        text-align: center;
+        border-bottom: 2px solid black;
+        font-size: 50px;
+    }
+    .box-container {
+        display: inline-block;
+    }
+    .box-container1{
+        display: inline-block;
+    }
+    .box-container2{
+        display: inline-block;
+    }
+    .image img {
+        height: 350px;
+        width: 500px;
+        margin: 30px 20px;
+    }
+    .image1 img {
+        height: 350px;
+        width: 500px;
+        margin: 30px 20px;
+    }
+    .image2 img {
+        height: 350px;
+        width: 500px;
+        margin: 30px 20px;
+    }
+    .image {
+        display: inline-block;
+    }
+    .image1 {
+        display: inline-block;
+    }
+    .image2 {
+        display: inline-block;
+    }
+    .button {
+        border: none;
+        margin-left: 4%;
+        cursor: pointer;
+        outline: 20px;
+        background-color: #2f3542;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        width: 59%;
+        padding: 7px;
+        margin: 20px;
+    }
+    .button1 {
+        border: none;
+        margin-left: 4%;
+        cursor: pointer;
+        outline: 20px;
+        background-color: #2f3542;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        width: 59%;
+        padding: 7px;
+        margin: 20px;
+    }
+    .button2 {
+        border: none;
+        margin-left: 4%;
+        cursor: pointer;
+        outline: 20px;
+        background-color: #2f3542;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        width: 59%;
+        padding: 7px;
+        margin: 20px;
+    }
+    .content p {
+        color: black;
+        font-size: 2.4rem;
+        margin: 0px 20px;
+        padding: 7px;
+    }
+    .content1 p {
+        color: black;
+        font-size: 2.4rem;
+        margin: 0px 20px;
+        padding: 7px;
+    }
+    .content2 p {
+        color: black;
+        font-size: 2.4rem;
+        margin: 0px 20px;
+        padding: 7px;
+    }
+    .side-container1{
+        display: block;
+    }
+
+    .side-content1 p{
+        font-size: 2.4rem;
+    }
+    .side-image1 img {
+        width: 250px;
+        height: 180px;
+    }
+    .side-content1 {
+        display: flex;
+        align-items: center;
+        margin: 15px 0px;
+        padding: 20px;
+    }
+    .footer{
+        font-size: 3rem;
+    }
+    .footer:hover{
+        font-size: 3.2rem;
+    }
+}

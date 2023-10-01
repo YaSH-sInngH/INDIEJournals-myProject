@@ -1,0 +1,128 @@
+html{
+    background-color: rgb(236, 240, 241 );
+}
+.container{
+    min-height: 130vh;
+}
+/* .container::before{
+    content: "";
+    height: 150%;
+    width: 100%;
+    background: center/cover no-repeat url('/static/05.jpg');
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.9; 
+    z-index: -1;
+} */
+h1{
+    text-align: center;
+    padding: 18px 21px;
+    background-color: rgb(252, 243, 207 );
+}
+.card-container{
+    display: inline-block;
+    background-color: beige;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 420px;
+    width: 30%;
+    margin: 150px 25px;
+    box-shadow: 5px 5px 7px #555;
+}
+/* .card-container:hover{
+    transform: scale(1.1);
+    background-color: bisque;
+} */
+.card-container h2{
+    text-align: center;
+    margin: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #BDB76B;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+}
+.card-img img{
+    height: 300px;
+    transition: width 0.3s;
+    margin: 30px 5px;
+}
+.card-img:hover img{
+    filter: drop-shadow(5px 5px 5px #383838);
+}
+.card-content{
+    padding: 20px;
+    /* margin: 20px 5px; */
+    /* margin-top: 60px;  */
+}
+.card-content p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 12px;
+    text-align: center;
+}
+.card-content1{
+    padding: 20px;
+}
+.card-content1 p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 12px;
+    text-align: center;
+}
+
+/*                           MAKING THE WEBSITE RESPONSIVE                       */
+
+/* 
+USING MEDIA QUERRY
+FOR MOBILE PHONES 
+*/
+
+@media (max-width: 1300px){
+    
+    .container{
+        min-height: 130vh;
+    }
+    h1{
+        font-size: 4rem;
+    }
+
+    
+    .card-container {
+        display: inline-block;
+        background-color: beige;
+        border: 3px solid black;
+        border-radius: 10px;
+        height: 700px;
+        width: 90%;
+        margin: 0px 50px;
+        box-shadow: 5px 5px 7px #555;
+        margin-top: 150px;
+    }
+    .card-container h2{
+        font-size: 3rem;
+    }
+    .card-content p{
+        font-size: 2.2rem;
+    }
+    .card-content1{
+        padding: 40px;
+        margin: 0px 150px;
+    }
+    .card-img img{
+        height: 340px;
+    }
+    .card-content1 p {
+        font-size: 2.15rem;
+        font-weight: 600;
+        margin: 12px;
+        text-align: center;
+    }
+}
+
+
+
+

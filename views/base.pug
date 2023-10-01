@@ -1,0 +1,40 @@
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
+
+doctype html
+html
+  head
+    link(rel="icon", type="image/x-icon", href="/static/INDIEJournals.png")
+    title INDIEJournals
+    block scripts
+    block style
+  body
+    nav#navbar
+      ul 
+        div#logo 
+            img(src="/static/INDIEJournals.png")
+        li #[a(href="/") Home]
+        li #[a(href="/about") About]
+        li #[a(href="/journals") Our Journals]
+        li #[a(href="/case") News]
+    block content
+    footer#footer
+      section#footersection
+        div#firstfooter
+          span Get Started with us on Social Media :  
+        div#secondfooter 
+          a(href="")
+            i(class="fab fa-facebook-f")
+          a(href="")
+            i(class="fab fa-twitter")
+          a(href="")
+            i(class="fab fa-google")
+          a(href="")
+            i(class="fab fa-instagram")
+          a(href="")
+            i(class="fab fa-linkedin")
+          a(href="")
+            i(class="fab fa-github")
+      div#thirdfooter 
+          | "INDIEJournals will tell you the truth, No matter what !!!"
+      div#fourthfooter
+          | ©2023 Copyright:INDIEJournals.com

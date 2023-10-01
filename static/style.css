@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo */
+
+#logo{
+    display: flex;
+    align-items: center;
+    padding: 2px 10px;
+    /* margin: 0px 12px; */
+}
+#logo img{
+    height: 65px;
+}
+
+/* Navbar */
+
+#navbar{
+    background-color: rgb(250, 213, 167);
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 12px;
+}
+#navbar ul li a{
+    outline: none;
+    text-decoration: none;
+    padding: 13px 17px;
+    margin: 7px;
+    font-size: 1.29rem;
+    color: black;
+}
+#navbar ul li a:hover   {
+    font-size: 1.7rem;
+    color: black;
+    font-weight: bold;
+}
+
+/* Home Section */
+
+#homepage{
+    height: 650px;
+    background-color: rgb(253, 243, 230);
+    padding: 0px 200px;
+}
+#homepage h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0px 10px;
+    padding: 23px;
+}
+#homepage p{
+    font-size: 18.7px;
+    text-align: center;
+    margin: 5px 10px;
+    padding: 20px;
+}
+
+/* Intro Section */
+
+#introsection{
+    background: center/cover no-repeat url('/static/img/p4.jpg');
+    height: 700px;
+    background-color: rgb(199, 186, 169);   
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    z-index: -1;
+}
+#introsection p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 344px;
+    color: black;
+    margin-top: 90px;
+}
+
+#introsection h1{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 30px;
+    color: black;
+}
+/* Member Section */
+
+#membersection{
+    background-color: rgb(250, 242, 231);
+    height: 450px;
+    /* display: flex;
+    align-items: center; */
+}
+#membersection h1{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 20px;
+}
+#form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#image {
+    flex: 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#image img {
+    height: 300px;
+}
+
+.myform {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 215px;
+}
+.myInput{
+    margin: 7px;
+    width: 40%;
+    padding: 10px;
+    border: 3px solid black;
+    font-size: 0.95rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-weight: 400;
+}
+.btn{
+    margin: 12px;
+    padding: 10px;
+    width: 40%;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: rgb(243, 207, 163);
+    color: black;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(244, 199, 141);
+    font-size: 18px;
+}
+
+#footer{
+    background-color: bisque;
+    height: 200px;
+    border: 10px solid black;
+}
+
+#footersection{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#firstfooter span{
+    font-size: 1.3rem;
+}
+#secondfooter a i{
+    margin: 16px;
+    text-decoration: none;
+    height: 20px;
+}
+#secondfooter a i:hover{
+    transform: scale(2);
+    box-shadow: 0px 2px 4px rgb(0, 0, 0);;
+}
+#thirdfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 1.125rem;
+}
+#fourthfooter{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 12px;
+    position: sticky;
+    bottom: 0;
+}
+
+
+/*                           MAKING THE WEBSITE RESPONSIVE                       */
+
+/* 
+USING MEDIA QUERRY
+FOR MOBILE PHONES 
+*/
+@media (max-width: 1300px) {
+    
+    #navbar ul li a{
+        margin: 0px 5px;
+        font-size: 2.9rem;
+    }
+    #navbar ul li a:hover{
+        font-size: 3rem;
+    }
+    #logo img{
+        height: 200px;
+    }
+    #homepage{
+        height: 4200px;
+    }
+    #homepage h1{
+        font-size: 4.5rem;
+    }
+    #homepage p{
+        font-size: 45px;
+    }
+    #introsection{
+        height: 1500px;
+    }
+    #introsection h1{
+        font-size: 5.5rem;
+    }
+    #introsection p {
+        font-size: 3.1rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 0px 200px;
+        color: black;
+        margin-top: 94px;
+    }
+    #membersection{
+        height: 1000px;
+    }
+    #membersection h1{
+        font-size: 4.5rem;
+        padding: 60px;
+    }
+    #image img{
+        height: 300px;
+    }
+
+    .myform{
+        display: inline;
+        padding-left: 20px;
+    }
+    .myInput{
+        width: 95%;
+        font-size: 2.4rem;
+        padding: 12px;
+        margin: 20px;
+    }
+    .navbar ul li a{
+        font-size: 1.4rem;
+    }
+    .btn{
+        margin: 11px;
+        padding: 14px;
+        width: 96%;
+        font-size: 40px;
+        font-weight: bold;
+        border: 5px solid black;
+        border-radius: 40px;
+        background-color: rgb(243, 207, 163);
+        color: black;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(244, 199, 141);
+        font-size: 50px;
+    }
+    #footer{
+        height: 700px;
+    }
+    #footersection{
+        padding: 45px;
+    }
+    #firstfooter span{
+        font-size: 3rem;
+    }
+    #secondfooter a i{
+        transform: scale(4);
+        margin: 60px;
+        height: 35px;
+    }
+    #thirdfooter{
+        margin: 60px;
+        font-size: 2.2rem;
+    }
+    #fourthfooter{
+        font-size: 2.3rem;
+    }
+}
