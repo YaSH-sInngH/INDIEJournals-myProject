@@ -3,32 +3,6 @@ const path = require("path");
 const port = 40000;
 const app = express();
 const favicon = require("serve-favicon");
-const mongoose = require('mongoose');
-// const bodyparser = require("body-parser")
-
-main().catch(err => console.log(err));
-
-async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/memberJournal');
-
-}
-const memberSchema = new mongoose.Schema({
-    name: String,
-    email: String,
-    phone: Number,
-    interest: String,
-    moral: String
-});
-const Member = mongoose.model('Member', memberSchema);
-app.post('/', (req, res)=>{
-    var myData = new Member(req.body);
-    myData.save().then(()=>{
-        res.send("This item have been saved to the database")
-    }).catch(()=>{
-        res.status(400).send("Item was not saved to the database")
-    });
-    // res.status(200).render('contact.pug');
-})
 
 //Favicon on website
 app.use(favicon(path.join(__dirname, "INDIEJournals.png")));
