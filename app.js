@@ -8,7 +8,7 @@ const favicon = require("serve-favicon");
 //Favicon on website
 app.use(favicon(path.join(__dirname, "INDIEJournals.png")));
 //Express Work
-app.use('/static', express.static('static')) //For Serving Files
+app.use('/static', express.static(path.join(__dirname, 'static'))) //For Serving Files
 app.use(express.urlencoded({ extended: true }))
 
 //Setting Pug as template
