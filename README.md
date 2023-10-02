@@ -35,12 +35,6 @@ Clone the project
   git clone https://github.com/YaSH-sInngH/INDIEJournals-myProject.git
 ```
 
-Go to the project directory
-
-```bash
-  cd //my-project
-```
-
 Install dependencies
 
 ```bash
@@ -58,5 +52,6 @@ or
   nodemon app.js
 ```
 
-It will run the priject on localhost
+It will run the project on localhost
 
+The port might looks way heavy but it's okay. 
